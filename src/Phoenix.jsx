@@ -6,7 +6,7 @@ import * as THREE from 'three';
 export default function Phoenix(props) {
   const group = useRef();
   
-  const { scene, animations } = useGLTF('/models/phoenix.glb');
+  const { scene, animations } = useGLTF('models/phoenix.glb');
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
@@ -49,4 +49,4 @@ export default function Phoenix(props) {
   
 }
 
-useGLTF.preload('/models/phoenix.glb');
+useGLTF.preload('models/phoenix.glb');
